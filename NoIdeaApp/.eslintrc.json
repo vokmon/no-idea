@@ -1,0 +1,23 @@
+{
+  "env": {
+      "node": true,
+      "browser": true,
+      "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "react/prefer-stateless-function": [0],
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "no-use-before-define": ["error", { "functions": true, "classes": true, "variables": false }],
+    "linebreak-style": 0,
+    "import/prefer-default-export": 0
+  }
+}
