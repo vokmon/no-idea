@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from 'react-navigation';
-
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Home } from './app/components/Home';
 import { Restaurant } from './app/components/Restaurant';
 import { Translator } from './app/components/Translator';
@@ -11,6 +11,15 @@ export default createBottomTabNavigator({
   Home,
   Restaurant,
   Translator,
+},
+{
+  tabBarOptions: {
+    activeTintColor: 'tomato',
+    inactiveTintColor: 'gray',
+    labelStyle: {
+      fontSize: 14,
+    },
+  },
 });
 
 // export default class App extends React.Component {
